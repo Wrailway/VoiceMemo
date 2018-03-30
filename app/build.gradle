@@ -1,5 +1,8 @@
 apply plugin: 'com.android.application'
 
+//使用greendao
+apply plugin: 'org.greenrobot.greendao'
+
 android {
     compileSdkVersion 26
     defaultConfig {
@@ -16,15 +19,29 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    //greendao配置
+    greendao {
+        //版本号，升级时可配置
+        schemaVersion 1
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'com.google.code.gson:gson:2.8.0'
     implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:cardview-v7:24.0.0'
     implementation 'com.android.support.constraint:constraint-layout:1.0.2'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.1'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
     implementation 'com.android.support:design:26.1.0'
+
+    //greendao依赖
+    compile 'org.greenrobot:greendao:3.2.0'
+
+    // Stetho：Facebook推出的，调试时能在谷歌浏览器上查看数据库
+    // 运行App, 打开Chrome输入chrome://inspect/#devices
+    compile 'com.facebook.stetho:stetho:1.5.0'
 }
