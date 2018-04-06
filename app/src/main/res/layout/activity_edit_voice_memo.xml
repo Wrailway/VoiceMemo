@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/pager_background" >
+
+    <include
+        android:id="@+id/title_bar"
+        layout="@layout/layout_title_bar" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:textSize="20dp"
+        android:text="备忘内容：" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/title_bar"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="保存"
+        android:textColor="@drawable/selector_button_font_color"
+        android:background="@drawable/selector_button_bg"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/et_memo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btn_playVoice"
+        android:layout_below="@+id/tv_hint"
+        android:layout_margin="15dp"
+        android:padding="10dp"
+        android:gravity="start"
+        android:background="@drawable/selector_edittext__bg"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_playVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:background="@drawable/selector_button_bg"
+        android:gravity="center"
+        android:text="点击播放语音"
+        android:textColor="@drawable/selector_button_font_color"
+        android:textSize="18dp" />
+
+</RelativeLayout>
