@@ -1,5 +1,7 @@
 package tk.chuanjing.voicememo.dao;
 
+import org.greenrobot.greendao.query.QueryBuilder;
+
 import java.util.List;
 
 import tk.chuanjing.voicememo.MyApplication;
@@ -50,5 +52,14 @@ public class MyVoiceMemoBeanDao {
     public static VoiceMemoBean findById(Long id) {
         // return dao.queryBuilder().where(VoiceMemoBeanDao.Properties.Id.eq(id)).list();
         return dao.queryBuilder().where(VoiceMemoBeanDao.Properties.Id.eq(id)).unique();
+    }
+
+    /**
+     * 根据文本内容模糊查询
+     * @param memoText
+     * @return
+     */
+    public static List<VoiceMemoBean> findByMemoText(String memoText) {
+        return dao.queryBuilder().where(VoiceMemoBeanDao.Properties.MemoText.like("%" + memoText + "%")).list();
     }
 }
