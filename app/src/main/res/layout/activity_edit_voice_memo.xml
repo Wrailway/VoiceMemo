@@ -46,6 +46,23 @@
         android:textSize="18dp" />
 
     <Button
+        android:id="@+id/btn_pauseVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@id/btn_playVoice"
+        android:layout_marginLeft="15dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/selector_button_bg"
+        android:gravity="center"
+        android:text="暂停"
+        android:textColor="@drawable/selector_button_font_color"
+        android:textSize="18dp" />
+
+    <Button
         android:id="@+id/btn_playVoice"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
@@ -53,11 +70,28 @@
         android:layout_centerHorizontal="true"
         android:layout_gravity="center_vertical"
         android:layout_marginBottom="20dp"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
         android:background="@drawable/selector_button_bg"
         android:gravity="center"
-        android:text="点击播放语音"
+        android:text="播放语音"
+        android:textColor="@drawable/selector_button_font_color"
+        android:textSize="18dp" />
+
+    <Button
+        android:id="@+id/btn_stopVoice"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignRight="@id/btn_playVoice"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:background="@drawable/selector_button_bg"
+        android:gravity="center"
+        android:text="停止"
         android:textColor="@drawable/selector_button_font_color"
         android:textSize="18dp" />
 
