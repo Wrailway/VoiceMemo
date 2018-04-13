@@ -23,7 +23,7 @@ public class MemoListAdapter extends RecyclerView.Adapter<MemoListAdapter.ViewHo
 
     @Override
     public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = View.inflate(parent.getContext(), R.layout.item_recyclerview_memolist, null);
+        View view = View.inflate(parent.getContext(), R.layout.item_recyclerview_memo_list, null);
         return new ViewHolder(view);
     }
 
