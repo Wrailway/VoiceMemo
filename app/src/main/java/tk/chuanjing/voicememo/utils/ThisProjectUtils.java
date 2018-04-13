@@ -6,9 +6,10 @@ import java.util.List;
 import tk.chuanjing.voicememo.Constant;
 
 /**
+ * 此工程相关的工具类
+ *
  * Created by ChuanJing on 2018/4/8.
  */
-
 public class ThisProjectUtils {
     /**把  集合路径转换成  用分隔符分隔的字符串*/
     public static String getImgOrVideoPathForList(List<String> imgOrVideoPathList) {

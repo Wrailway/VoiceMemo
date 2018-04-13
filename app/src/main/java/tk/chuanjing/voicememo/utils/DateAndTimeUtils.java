@@ -61,7 +61,7 @@ public class DateAndTimeUtils {
 	/**
 	 * 传入一个需要的 时间格式 和 需要转换的Date类型的时间，返回这个格式的时间
 	 *
-	 * @param date	需要转换的long类型的时间
+	 * @param longTime	需要转换的long类型的时间
 	 * @param timeFormat
 	 * @return
 	 */
@@ -350,7 +350,7 @@ public class DateAndTimeUtils {
 	/**
 	 * 判断某月有多少天
 	 *
-	 * @param 月的long值
+	 * @param longTime 月的long值
 	 * @return 天数
 	 */
 	public static int getMonthHaveDay(long longTime) {
