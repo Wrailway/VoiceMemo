@@ -44,4 +44,7 @@ dependencies {
     // Stetho：Facebook推出的，调试时能在谷歌浏览器上查看数据库
     // 运行App, 打开Chrome输入chrome://inspect/#devices
     compile 'com.facebook.stetho:stetho:1.5.0'
+
+    // PictureSelector
+    implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.2'
 }
