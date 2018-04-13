@@ -28,6 +28,10 @@ import tk.chuanjing.voicememo.utils.DateAndTimeUtils;
 import tk.chuanjing.voicememo.utils.ThisProjectUtils;
 import tk.chuanjing.voicememo.utils.ToastUtils;
 
+/**
+ * 编辑页面的Activity：
+ *      在此Activity中可以对已经存在的备忘进行修改 或者 删除
+ */
 public class EditVoiceMemoActivity extends BaseActivity {
 
     private ImageButton imgbtn_right;
@@ -124,8 +128,10 @@ public class EditVoiceMemoActivity extends BaseActivity {
         // 更新RecyclerView
         String imgOrVideoPath = voiceMemoBean.getImgOrVideoPath();
         imgOrVideoPathList = ThisProjectUtils.getImgOrVideoPathForStr(imgOrVideoPath);
-        memoNewAdapter.setDate(imgOrVideoPathList);
-        memoNewAdapter.notifyDataSetChanged();
+        if(imgOrVideoPathList != null && imgOrVideoPathList.size() > 0) {
+            memoNewAdapter.setDate(imgOrVideoPathList);
+            memoNewAdapter.notifyDataSetChanged();
+        }
 
         initMediaPlayer();
     }
@@ -202,7 +208,7 @@ public class EditVoiceMemoActivity extends BaseActivity {
     }
 
     /**
-     * 初始化mp
+     * 初始化MediaPlayer
      */
     private void initMediaPlayer() {
         /*
