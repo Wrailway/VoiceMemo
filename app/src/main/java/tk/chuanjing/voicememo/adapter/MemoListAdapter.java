@@ -11,6 +11,8 @@ import tk.chuanjing.voicememo.R;
 import tk.chuanjing.voicememo.bean.VoiceMemoBean;
 
 /**
+ * 主Activity中备忘列表RecyclerView的Adapter
+ *
  * Created by ChuanJing on 2018/03/28.
  */
 public class MemoListAdapter extends RecyclerView.Adapter<MemoListAdapter.ViewHolder> {

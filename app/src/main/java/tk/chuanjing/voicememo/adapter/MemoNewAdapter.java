@@ -14,6 +14,8 @@ import tk.chuanjing.voicememo.MyApplication;
 import tk.chuanjing.voicememo.R;
 
 /**
+ * 新建备忘Activity 和 编辑Activity中RecyclerView的Adapter
+ *
  * Created by ChuanJing on 2018/04/08.
  */
 public class MemoNewAdapter extends RecyclerView.Adapter<MemoNewAdapter.ViewHolder> {
