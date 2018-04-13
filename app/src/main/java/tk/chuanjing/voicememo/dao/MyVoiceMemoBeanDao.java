@@ -9,9 +9,10 @@ import tk.chuanjing.voicememo.bean.VoiceMemoBean;
 import tk.chuanjing.voicememo.bean.VoiceMemoBeanDao;
 
 /**
+ * 操作数据库表的Dao层，直接调用greendao中的方法实现对数据表的增删改查
+ *
  * Created by ChuanJing on 2018/3/29.
  */
-
 public class MyVoiceMemoBeanDao {
 
     private static VoiceMemoBeanDao dao = MyApplication.getDaoInstant().getVoiceMemoBeanDao();
